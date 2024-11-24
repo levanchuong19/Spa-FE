@@ -1,0 +1,84 @@
+.Footer{
+    background-color: rgb(96, 42, 1);
+    color: #fff;
+    .footer{
+        // margin: 100px 150px;
+        padding: 50px 0;
+        display: flex;
+        justify-content: center;
+        gap: 300px;
+        .content1{
+            display: flex;
+            flex-direction: column;
+            font-size: 18px;
+            gap: 15px;
+        }
+        .footer__reight{
+            width: 450px;
+            
+            .form{
+                display: flex;
+                flex-direction: column;
+                p{
+                    color: #fff;
+                }
+                .input{
+                    width: 450px;
+                    border: none;
+                    border-radius: 0;
+                }
+            }
+            .gui{
+                border: none;
+                border-radius: 0;
+                font-weight: 600;
+                width: 100px;
+                
+            }
+        }
+    }
+
+    .footer_line{
+        // padding: 20px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    .line_footer{
+        height: 2px;
+        background-color: #fff;
+        width: 79%;
+        margin-bottom: 20px;
+    }
+  }
+  .content_end{
+    display: flex;
+    gap: 20px;
+    padding-left: 155px;
+    padding-bottom: 15px;
+    a{
+    color: #fff;
+    text-decoration: none;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+    .Footer .footer {
+        flex-direction: column; /* Xếp các phần tử theo cột */
+        gap: 30px; /* Giảm khoảng cách giữa các phần */
+        margin: 50px 20px; /* Giảm khoảng cách bên ngoài */
+    }
+
+    .Footer .footer__reight .form Input {
+        width: 100%; /* Input sẽ chiếm toàn bộ chiều ngang */
+    }
+
+    .Footer .footer__reight {
+        width: 100%; /* Chiều rộng thành 100% để phù hợp màn hình nhỏ */
+    }
+
+    .Footer .footer_line .line_footer {
+        width: 100%; /* Đường kẻ cũng chiếm toàn bộ chiều ngang */
+    }
+}
