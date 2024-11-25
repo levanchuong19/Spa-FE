@@ -1,5 +1,83 @@
 
-.Header{
+// .Header{
+//     background-color: rgb(96, 42, 1);
+//     position: fixed;
+//     left: 0;
+//     top: 0;
+//     right: 0;
+//     z-index: 1000;
+//     display: flex;
+//     text-align: center;
+//     justify-content: center;
+//     .header{
+//         width: 83%;
+//         // background-color: red;
+//         display: flex;
+//         // margin: 0 200px;
+//         gap: 380px;
+//         .header__left{
+//     padding: 10px;
+//     ul{
+//         gap: 30px;
+//         display: flex;
+//         align-items: center;
+           
+//             li{
+//             list-style: none;
+//             font-size: 20px;
+//             font-weight: 600;
+//             .link{
+//                 text-decoration: none;
+//                 color: #fff;
+//             }
+//             &:hover{
+//                 &::after{
+//                     width: 100%;
+//                 }
+//             }
+//             &::after{
+//                 content: '';
+//                 display: block;
+//                 width: 0;
+//                 height: 2px;
+//                 background-color: white;
+//                 transition: all 0.3s;
+                
+//             }
+//             }
+//         }
+//     };
+//     .header__right{
+//         align-items: center;
+//         gap: 20px;
+//         color: white;
+//        font-size: 30px;
+//        display: flex;
+//        .search{
+//         position: absolute;
+//         color: black;
+//         right: 10px;
+//         font-size: 20px;
+//         top: 10px;
+//        }
+//        .input-wrapper{
+//         position: relative;
+//        }
+//     }
+//     }
+// }
+// @media (max-width: 480px) {
+//     .header {
+//       font-size: 12px; /* Giảm kích thước tổng thể */
+//       gap: 5px; /* Khoảng cách nhỏ nhất giữa các phần */
+//     }
+  
+//     .header__left ul {
+//       gap: 5px;
+//     }
+//   }
+
+.Header {
     background-color: rgb(96, 42, 1);
     position: fixed;
     left: 0;
@@ -9,82 +87,114 @@
     display: flex;
     text-align: center;
     justify-content: center;
-    .header{
-        width: 83%;
-        // background-color: red;
-        display: flex;
-        // margin: 0 200px;
-        gap: 380px;
-        .header__left{
-    padding: 10px;
-    ul{
-        gap: 30px;
-        display: flex;
-        align-items: center;
-           
-            li{
+     width: 100%;
+    //  padding: 0;
+    //  margin: 0;
+    //  overflow-x: hidden;
+    .header {
+      width: 83%;
+      display: flex;
+      gap: 380px;
+      
+  
+      .header__left {
+        padding: 10px;
+  
+        ul {
+          gap: 30px;
+          display: flex;
+          align-items: center;
+  
+          li {
             list-style: none;
-            font-size: 20px;
+            font-size: 1.3vw; /* Sử dụng vw để font size thay đổi theo kích thước màn hình */
             font-weight: 600;
-            .link{
-                text-decoration: none;
-                color: #fff;
+  
+            .link {
+              text-decoration: none;
+              color: #fff;
             }
-            &:hover{
-                &::after{
-                    width: 100%;
-                }
+  
+            &:hover {
+              &::after {
+                width: 100%;
+              }
             }
-            &::after{
-                content: '';
-                display: block;
-                width: 0;
-                height: 2px;
-                background-color: white;
-                transition: all 0.3s;
-                
+  
+            &::after {
+              content: '';
+              display: block;
+              width: 0;
+              height: 2px;
+              background-color: white;
+              transition: all 0.3s;
             }
-            }
+          }
         }
-    };
-    .header__right{
+      }
+  
+      .header__right {
         align-items: center;
         gap: 20px;
         color: white;
-       font-size: 30px;
-       display: flex;
-       .search{
-        position: absolute;
-        color: black;
-        right: 10px;
-        font-size: 20px;
-        top: 10px;
-       }
-       .input-wrapper{
-        position: relative;
-       }
-    }
-    }
-}
-@media (max-width: 700px) {
-    .header {
-        margin: 0 20px; /* Giảm lề để phù hợp màn hình nhỏ */
-        flex-direction: column; /* Chuyển sang hiển thị theo chiều dọc */
-        align-items: center; /* Căn giữa nội dung */
-
-        .header__left,
-        .header__right {
-            width: 100%; /* Đảm bảo chiếm toàn bộ chiều rộng */
-            text-align: center; /* Căn giữa nội dung */
+        font-size: 2.1vw; /* Sử dụng vw để font size thay đổi theo kích thước màn hình */
+        display: flex;
+        align-items: center;
+        .search {
+          position: absolute;
+          color: black;
+          right: 10px;
+          font-size: 2vw; /* Dùng vw cho biểu tượng tìm kiếm */
+          top: 10px;
         }
-
-        .header__left ul {
-            flex-direction: column; /* Các mục menu theo chiều dọc */
-            gap: 10px; /* Khoảng cách giữa các mục */
+  
+        .input-wrapper {
+          position: relative;
         }
-
-        .header__right {
-            font-size: 20px; /* Giảm kích thước chữ trên màn hình nhỏ */
-        }
+      }
     }
-}
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    .Header .header {
+      margin: 0 20px; /* Giảm lề để phù hợp màn hình nhỏ */
+      gap: 5vw; /* Giảm khoảng cách giữa các phần tử theo tỷ lệ */
+    }
+  
+    .Header .header__left,
+    .Header .header__right {
+      width: 100%; /* Đảm bảo chiếm toàn bộ chiều rộng */
+      text-align: center; /* Căn giữa nội dung */
+    }
+  
+    .Header .header__left ul {
+      flex-direction: row; /* Giữ nguyên dạng ngang cho menu */
+      gap: 3vw; /* Giảm khoảng cách giữa các mục menu */
+    }
+  
+    .Header .header__right {
+      font-size: 4vw; /* Sử dụng vw cho font size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .Header .header {
+      font-size: 3vw; /* Sử dụng vw cho font size nhỏ hơn */
+      gap: 4vw; /* Giảm khoảng cách giữa các phần */
+    }
+  
+    .Header .header__left ul {
+      gap: 2vw; /* Khoảng cách giữa các mục menu nhỏ hơn */
+    }
+  
+    .Header .header__right {
+      font-size: 5vw; /* Giảm kích thước chữ */
+      gap: 6vw; /* Giảm khoảng cách */
+    }
+  
+    .Header .search {
+      font-size: 3vw; /* Giảm kích thước tìm kiếm */
+    }
+  }
+  

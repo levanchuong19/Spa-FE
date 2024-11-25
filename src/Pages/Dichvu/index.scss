@@ -1,47 +1,181 @@
-.content{
-  font-size: 22px;
-    .h1_content{
-        color: #e26600;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 20px;
-    }
+// .content{
+//   font-size: 22px;
+//     .h1_content{
+//         color: #e26600;
+//         text-align: center;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         margin: 20px;
+//     }
     
-}
-.descreption{
-    // padding: 10px;
-    font-size: 18px;
+// }
+// .descreption{
+//     // padding: 10px;
+//     font-size: 18px;
+//     display: flex;
+//     justify-content: center;
+//     text-align: center;
+
+// }
+// .dichvu{
+//     display: flex;
+//     flex-wrap: wrap;
+//     padding: 40px 150px;
+//     gap: 100px;
+//     font-size: 22px;
+//     // background: linear-gradient(to right, #c77f5d, rgba(251, 240, 122, 0.732), rgba(247, 202, 87, 0));
+//     // border-radius: 10px;
+//     // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+//   // &__left, &__right {
+//   //   flex: 1;
+//   // }
+//     img{
+//         border-radius: 5px;
+//     }
+//     .subject_content{
+//         font-size: 28px;
+//         color: chocolate;
+//         width: 550px;
+//     }
+//     .dichvu_content{
+//         color: gray;
+//          margin-top: 30px;
+//          width: 550px;
+//     }
+// }
+.content {
+    font-size: 22px; /* Kích thước chữ ban đầu */
+    
+    .h1_content {
+      color: #e26600;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 20px;
+    }
+  }
+  
+  .descreption {
+    font-size: 18px; /* Kích thước chữ cho mô tả */
     display: flex;
     justify-content: center;
     text-align: center;
-
-}
-.dichvu{
+  }
+  
+  .dichvu {
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     padding: 40px 150px;
     gap: 100px;
-    font-size: 22px;
-    // background: linear-gradient(to right, #c77f5d, rgba(251, 240, 122, 0.732), rgba(247, 202, 87, 0));
-    // border-radius: 10px;
-    // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
-  // &__left, &__right {
-  //   flex: 1;
-  // }
-    img{
-        border-radius: 5px;
+    font-size: 22px; /* Kích thước chữ cho dịch vụ */
+    
+    img {
+      max-width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng của phần tử */
+      height: auto; /* Tự động điều chỉnh chiều cao theo tỷ lệ */
+      border-radius: 5px;
     }
-    .subject_content{
-        font-size: 28px;
-        color: chocolate;
-        width: 550px;
+  
+    .subject_content {
+      font-size: 28px;
+      color: chocolate;
+      width: 550px;
     }
-    .dichvu_content{
-        color: gray;
-         margin-top: 30px;
-         width: 550px;
+  
+    .dichvu_content {
+      color: gray;
+      margin-top: 30px;
+      width: 550px;
     }
-}
+  }
+  
+  /* Media Queries để thu nhỏ kích thước chữ và hình ảnh khi màn hình thu nhỏ */
+  @media (max-width: 1024px) {
+    .content {
+      font-size: 18px; /* Giảm kích thước chữ khi màn hình nhỏ hơn 1024px */
+    }
+  
+    .descreption {
+      font-size: 16px; /* Giảm kích thước chữ mô tả */
+    }
+  
+    .dichvu {
+      gap: 60px; /* Giảm khoảng cách giữa các phần tử */
+      padding: 30px 100px; /* Giảm padding */
+      font-size: 20px; /* Giảm kích thước chữ */
+    }
+  
+    .dichvu .subject_content {
+      font-size: 24px; /* Giảm kích thước tiêu đề dịch vụ */
+      width: 450px; /* Giảm chiều rộng */
+    }
+  
+    .dichvu .dichvu_content {
+      width: 450px; /* Giảm chiều rộng mô tả dịch vụ */
+    }
+  
+    .dichvu img {
+      max-width: 80%; /* Hình ảnh thu nhỏ lại khi màn hình nhỏ */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .content {
+      font-size: 16px; /* Giảm font-size cho màn hình nhỏ */
+    }
+  
+    .descreption {
+      font-size: 14px; /* Giảm kích thước chữ mô tả */
+    }
+  
+    .dichvu {
+      gap: 30px; /* Giảm khoảng cách */
+      padding: 20px 50px; /* Giảm padding */
+      font-size: 18px; /* Giảm kích thước chữ */
+    }
+  
+    .dichvu .subject_content {
+      font-size: 20px; /* Giảm kích thước tiêu đề dịch vụ */
+      width: 100%; /* Đảm bảo chiều rộng bằng 100% */
+    }
+  
+    .dichvu .dichvu_content {
+      width: 100%; /* Đảm bảo chiều rộng bằng 100% */
+    }
+  
+    .dichvu img {
+      max-width: 70%; /* Hình ảnh thu nhỏ hơn nữa */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .content {
+      font-size: 14px; /* Giảm font-size cho màn hình cực nhỏ */
+    }
+  
+    .descreption {
+      font-size: 12px; /* Giảm kích thước chữ mô tả */
+    }
+  
+    .dichvu {
+      gap: 20px; /* Giảm khoảng cách */
+      padding: 15px 20px; /* Giảm padding */
+      font-size: 16px; /* Giảm kích thước chữ */
+    }
+  
+    .dichvu .subject_content {
+      font-size: 18px; /* Giảm kích thước tiêu đề dịch vụ */
+      width: 100%; /* Đảm bảo chiều rộng bằng 100% */
+    }
+  
+    .dichvu .dichvu_content {
+      width: 100%; /* Đảm bảo chiều rộng bằng 100% */
+    }
+  
+    .dichvu img {
+      max-width: 60%; /* Hình ảnh thu nhỏ rất nhiều trên màn hình nhỏ */
+    }
+  }
+  
