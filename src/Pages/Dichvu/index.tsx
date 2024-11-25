@@ -314,7 +314,7 @@ function Service() {
           <Form.Item name="email">
             <Input
               placeholder="Email"
-              style={{ width: "395px", marginRight: "50px" }}
+              style={{ maxWidth: "395px", marginRight: "50px" }}
             />
           </Form.Item>
           <Button onClick={handleSubmit} type="primary">
