@@ -21,13 +21,15 @@
         gap: 30px;
         display: flex;
         align-items: center;
-        a{
-            text-decoration: none;
-            list-style: none;
+           
             li{
-            color: white;
+            list-style: none;
             font-size: 20px;
             font-weight: 600;
+            .link{
+                text-decoration: none;
+                color: #fff;
+            }
             &:hover{
                 &::after{
                     width: 100%;
@@ -44,7 +46,6 @@
             }
             }
         }
-    }
     };
     .header__right{
         align-items: center;

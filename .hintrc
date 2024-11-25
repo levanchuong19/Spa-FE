@@ -5,6 +5,7 @@
   "hints": {
     "axe/structure": "off",
     "no-inline-styles": "off",
-    "axe/name-role-value": "off"
+    "axe/name-role-value": "off",
+    "typescript-config/consistent-casing": "off"
   }
 }
