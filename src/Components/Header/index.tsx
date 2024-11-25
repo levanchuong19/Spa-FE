@@ -10,7 +10,7 @@ function Header() {
         <nav className="header__left">
           <ul>
             <img
-              width={90}
+              className="img"
               src="https://png.pngtree.com/png-clipart/20230806/original/pngtree-women-logo-vector-png-image_9441642.png"
               alt=""
             />

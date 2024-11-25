@@ -206,7 +206,7 @@
   /* Media queries riêng cho .home1 */
   @media (max-width: 1024px) {
     .home1 {
-    //   flex-direction: column;
+      flex-direction: column;
       text-align: center;
       gap: 15px;
   
@@ -253,7 +253,7 @@
   /* Media queries riêng cho .home */
   @media (max-width: 1024px) {
     .home {
-    //   flex-direction: column;
+      flex-direction: column;
       text-align: center;
       gap: 15px;
   

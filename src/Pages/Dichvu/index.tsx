@@ -52,7 +52,7 @@ function Service() {
       </div>
       <div>
         <div className="DichVu">
-          <div className="dichvu">
+          <div className="dichvu1">
             <div className="dichvu__left" data-aos="fade-up">
               <h3 className="subject_content">Gội đầu dưỡng sinh</h3>
               <p className="dichvu_content">
@@ -105,7 +105,7 @@ function Service() {
               </Button>
             </div>
           </div>
-          <div className="dichvu">
+          <div className="dichvu1">
             <div className="dichvu__left" data-aos="fade-up">
               <h3 className="subject_content">Lưu thông khí huyết</h3>
               <p className="dichvu_content">
@@ -158,7 +158,7 @@ function Service() {
               </Button>
             </div>
           </div>
-          <div className="dichvu">
+          <div className="dichvu1">
             <div className="dichvu__left" data-aos="fade-up">
               <h3 className="subject_content">Giác hơi trừ hàn</h3>
               <p className="dichvu_content">
@@ -211,7 +211,7 @@ function Service() {
               </Button>
             </div>
           </div>
-          <div className="dichvu">
+          <div className="dichvu1">
             <div className="dichvu__left" data-aos="fade-up">
               <h3 className="subject_content">Định hình cơ thể</h3>
               <p className="dichvu_content">

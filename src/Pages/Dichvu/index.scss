@@ -71,7 +71,32 @@
     padding: 40px 150px;
     gap: 100px;
     font-size: 22px; /* Kích thước chữ cho dịch vụ */
-    
+    background-color: #fff;
+    img {
+      max-width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng của phần tử */
+      height: auto; /* Tự động điều chỉnh chiều cao theo tỷ lệ */
+      border-radius: 5px;
+    }
+  
+    .subject_content {
+      font-size: 28px;
+      color: chocolate;
+      width: 550px;
+    }
+  
+    .dichvu_content {
+      color: gray;
+      margin-top: 30px;
+      width: 550px;
+    }
+  }
+  .dichvu1 {
+    display: flex;
+    // flex-wrap: wrap;
+    padding: 40px 150px;
+    gap: 100px;
+    font-size: 22px; /* Kích thước chữ cho dịch vụ */
+    background-color: #f4f3f3;
     img {
       max-width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng của phần tử */
       height: auto; /* Tự động điều chỉnh chiều cao theo tỷ lệ */
@@ -148,11 +173,30 @@
     .dichvu img {
       max-width: 70%; /* Hình ảnh thu nhỏ hơn nữa */
     }
+    .dichvu1 {
+      gap: 30px; /* Giảm khoảng cách */
+      padding: 20px 50px; /* Giảm padding */
+      font-size: 18px; /* Giảm kích thước chữ */
+    }
+  
+    .dichvu1 .subject_content {
+      font-size: 20px; /* Giảm kích thước tiêu đề dịch vụ */
+      width: 100%; /* Đảm bảo chiều rộng bằng 100% */
+    }
+  
+    .dichvu1 .dichvu_content {
+      width: 100%; /* Đảm bảo chiều rộng bằng 100% */
+    }
+  
+    .dichvu1 img {
+      max-width: 70%; /* Hình ảnh thu nhỏ hơn nữa */
+    }
   }
   
   @media (max-width: 480px) {
     .content {
       font-size: 14px; /* Giảm font-size cho màn hình cực nhỏ */
+      
     }
   
     .descreption {
@@ -163,6 +207,7 @@
       gap: 20px; /* Giảm khoảng cách */
       padding: 15px 20px; /* Giảm padding */
       font-size: 16px; /* Giảm kích thước chữ */
+      display: block;
     }
   
     .dichvu .subject_content {
@@ -175,6 +220,25 @@
     }
   
     .dichvu img {
+      max-width: 60%; /* Hình ảnh thu nhỏ rất nhiều trên màn hình nhỏ */
+    }
+    .dichvu1 {
+      gap: 20px; /* Giảm khoảng cách */
+      padding: 15px 20px; /* Giảm padding */
+      font-size: 16px; /* Giảm kích thước chữ */
+      display: block;
+    }
+  
+    .dichvu1 .subject_content {
+      font-size: 18px; /* Giảm kích thước tiêu đề dịch vụ */
+      width: 100%; /* Đảm bảo chiều rộng bằng 100% */
+    }
+  
+    .dichvu1 .dichvu_content {
+      width: 100%; /* Đảm bảo chiều rộng bằng 100% */
+    }
+  
+    .dichvu1 img {
       max-width: 60%; /* Hình ảnh thu nhỏ rất nhiều trên màn hình nhỏ */
     }
   }
