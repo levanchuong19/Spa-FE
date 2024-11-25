@@ -3,13 +3,15 @@ import { Button, Form, Input } from "antd";
 import "./index.scss";
 import api from "../../Config/api";
 import { toast } from "react-toastify";
+import { useForm } from "antd/es/form/Form";
 function Footer() {
+  const [form] = useForm();
   const handleSubmit = async (values: any) => {
     console.log("values", values);
     try {
       const response = await api.post("save", values);
       console.log(response.data);
-      // form.resetFields();
+      form.resetFields();
       toast.success("Chúng tôi đã nhận được thông tin của bạn!");
     } catch (error) {
       console.error("Failed to submit form:", error);
@@ -61,12 +63,11 @@ function Footer() {
             <h2 style={{ marginBottom: "25px" }}>
               Để lại thông tin để được tư vấn và hỗ trợ trải nghiệm thực tế
             </h2>
-            <Form onFinish={handleSubmit} layout="vertical">
+            <Form form={form} onFinish={handleSubmit} layout="vertical">
               <Form.Item
                 className="form"
                 // label="Điền tên của bạn:"
                 name="name"
-                labelCol={{ style: { color: "white" } }}
                 rules={[
                   { required: true, message: "Vui lòng nhập đầy đủ Họ và Tên" },
                 ]}
