@@ -196,7 +196,9 @@
   @media (max-width: 480px) {
     .content {
       font-size: 14px; /* Giảm font-size cho màn hình cực nhỏ */
-      
+      flex-direction: column;
+      text-align: center;
+
     }
   
     .descreption {
@@ -207,7 +209,8 @@
       gap: 20px; /* Giảm khoảng cách */
       padding: 15px 20px; /* Giảm padding */
       font-size: 16px; /* Giảm kích thước chữ */
-      display: block;
+      flex-direction: column;
+      text-align: center;
     }
   
     .dichvu .subject_content {
@@ -226,7 +229,8 @@
       gap: 20px; /* Giảm khoảng cách */
       padding: 15px 20px; /* Giảm padding */
       font-size: 16px; /* Giảm kích thước chữ */
-      display: block;
+      flex-direction: column;
+      text-align: center;
     }
   
     .dichvu1 .subject_content {
