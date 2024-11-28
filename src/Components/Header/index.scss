@@ -8,9 +8,9 @@
     display: flex;
     text-align: center;
     justify-content: center;
-    width: 100%;
+    // width: 100%;
     .header {
-      width: 83%;
+      max-width: 83%;
       display: flex;
       gap: 380px;
   
@@ -18,7 +18,7 @@
         padding: 10px;
         
         ul {
-          gap: 30px;
+          gap: 2.3vw;
           display: flex;
           align-items: center;
           .img{
@@ -77,6 +77,8 @@
   /* Media Queries for responsiveness */
   @media (max-width: 768px) {
     .Header .header {
+      display: flex;
+      text-align: center;
       margin: 0 20px; /* Giảm lề để phù hợp màn hình nhỏ */
       gap: 5vw; /* Giảm khoảng cách giữa các phần tử theo tỷ lệ */
     }
@@ -96,8 +98,8 @@
       font-size: 3.5vw; /* Giảm kích thước chữ */
     }
   
-    .Header .header__left ul li {
-      font-size: 15px; /* Kích thước chữ giảm dần */
+    .Header .header__left ul li .link {
+      font-size: 10px; /* Kích thước chữ giảm dần */
     }
   }
   
